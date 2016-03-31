@@ -1,0 +1,87 @@
+@import "libs/normalize",
+        "libs/bootstrap",
+        "libs/slick",
+        "libs/slick-theme",
+        "partials/constants";
+
+body, html {
+    padding: 0px;
+    min-width: 400px;
+    width: 100%;
+    font-size: 10px;
+    background-color: $lightgrey;
+    font-family: "futura", sans-serif;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    padding: 0;
+    -webkit-box-shadow: 0px 0px 86px -13px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 86px -13px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 86px -13px rgba(0,0,0,0.5);
+    background-color: $white;
+}
+
+h1, h2, h3 {
+    color: $black;
+    font-family: "futura-medium", sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.width-half {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+  @include breakpoint(small) {
+    width: 100%;
+    display: block;
+  }
+}
+
+.width-one-third {
+  width: 33.3333%;
+  display: inline-block;
+  vertical-align: top;
+  @include breakpoint(small) {
+    width: 100%;
+    display: block;
+  }
+}
+
+.width-whole {
+  width: 100%;
+  display: block;
+}
+
+.width-85 {
+    width: 85%;
+    display: block;
+    margin: 0 auto;
+}
+
+@import "partials/fonts",
+        "partials/header",
+        "partials/footer",
+        "partials/thanks",
+        "partials/blog",
+        "partials/homepage",
+        "partials/products",
+        "partials/enter";
+

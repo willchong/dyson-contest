@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">   
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    
+    <div class="container enter">
+        <!-- @@include templates/header.html -->
+        <div class="enter-header">
+            <img src="img/enter-header.jpg">
+        </div>
+        <div class="headline">
+            <h2>ENTER YOUR INFORMATION BELOW</h2>
+        </div>
+        <div class="checkboxes">
+            <div class="group">
+                <p>Does anyone in your home suffer from allergies?</p>
+                <div class="no-br">
+                    <label>Yes:</label>
+                    <input type="radio" value="yes" name="allergies" />
+                </div>
+                <div class="no-br">
+                    <label>No:</label>
+                    <input type="radio" value="no" name="allergies" />
+                </div>
+            </div>
+            <div class="group">
+            <p>Do you use a space heater in your home during the winter months?</p>
+                <div class="no-br">
+                    <label>Yes:</label>
+                    <input type="radio" value="yes" name="heater" />
+                </div>
+                <div class="no-br">
+                    <label>No:</label>
+                    <input type="radio" value="no" name="heater" />
+                </div>
+            </div>
+            <div class="group">
+                <p>Would you consider purchasing a cordless vacuum?</p>
+                <div class="no-br">
+                    <label>Yes:</label>
+                    <input type="radio" value="yes" name="consider" />
+                </div>
+                <div class="no-br">
+                    <label>No:</label>
+                    <input type="radio" value="no" name="consider" />
+                </div>
+            </div>
+            <div class="group">
+                <p>How often do you wash your vacuum filter?</p>
+                <div class="no-br">
+                    <label>Monthly:</label>
+                    <input type="radio" value="monthly" name="filter" />
+                </div>
+                <div class="no-br">
+                    <label>Quarterly:</label>
+                    <input type="radio" value="quarterly" name="filter" />
+                </div>
+                <div class="no-br">
+                    <label>Annually:</label>
+                    <input type="radio" value="annually" name="filter" />
+                </div>
+                <div class="no-br">
+                    <label>Never:</label>
+                    <input type="radio" value="never" name="filter" />
+                </div>
+            </div>
+            <div class="group">
+                <p>Are you worried about the air quality in your home?</p>
+                <div class="no-br">
+                    <label>Yes:</label>
+                    <input type="radio" value="yes" name="quality" />
+                </div>
+                <div class="no-br">
+                    <label>No:</label>
+                    <input type="radio" value="no" name="quality" />
+                </div>
+            </div>
+            
+        </div>
+        <div id="your-information-section">
+            <div class="fields">
+                <div id="personal-error-list"><ul></ul></div>
+                <br />
+                <label>Age:</label>
+                <input type="text" id="age" name="age" size="2" maxlength="2" />
+                <br />
+                <label>First Name:</label>
+                <input type="text" id="firstname" name="firstname" />
+                <br />
+                <label>Last Name:</label>
+                <input type="text" id="lastname" name="lastname" />
+                <br />
+                <label>Province:</label>
+                <pn:ProvinceDropDown ID="province" runat="server" />
+                <br />
+                <label>Postal Code:</label>
+                <input type="text" id="postalcode1" name="postalcode1" size="3" maxlength="3" class="multi" />
+                <input type="text" id="postalcode2" name="postalcode2" size="3" maxlength="3" />
+                <br />
+                <label>Phone Number:</label>
+                <input type="text" id="phone1" name="phone1" size="3" maxlength="3" class="multi" />
+                <input type="text" id="phone2" name="phone2" size="3" maxlength="3" class="multi" />
+                <input type="text" id="phone3" name="phone3" size="4" maxlength="4" />
+                <br />
+                <label>Email Address:</label>
+                <input type="text" id="email" name="email" />
+                <br />
+                <div id="rules-section">
+                    <h3><span>Rules &amp; Regulations</span></h3>
+                    <div id="rules-error-list"><ul></ul></div>
+                    <br />
+                    <input type="checkbox" id="readrules" name="readrules" />
+                    <label>I have read the <a href="rules.pdf" target="_blank">rules and regulations</a>.</label>
+                </div>
+                <div id="optin-section">
+                    <div id="extra-error-list"><ul></ul></div>
+                    <br />
+                    <input type="checkbox" id="permission" name="permission" />
+                    Please tick this box to receive emails about special offers, new product launches and surveys from Dyson. Every email we send includes an unsubscribe link, so you can easily change your mind.
+                    <br />
+                </div>
+                <p class="legal">Your privacy is important for us. Unless you have given us your information, we promise never to release your details to any outside company for marketing purposes. To read more on how your personal data is handled by dyson, read our <a href="http://www.dysoncanada.ca/en-CA/support/privacy-policy.aspx" class="nav-button">privacy policy</a></p>
+                <a href="#" id="entry-button"><span>Enter Now!</span></a>
+                <br />
+                <p>For more details on the Dyson range, <a class="nav-button" href="products.aspx">click here</a>.</p>
+            </div>
+
+        </div>
+        
+    <!-- @@include templates/footer.html -->
+    </div>
+    
+    <% //DO NOT REMOVE THIS %>
+    <input type="hidden" name="telephone" id="telephone" />
+    <input type="hidden" name="postalcode" id="postalcode" />
+    
+    
+    </div>
+
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

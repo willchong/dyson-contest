@@ -1,0 +1,132 @@
+.enter {
+	.enter-header {
+		width: 100%;
+		img {
+			width: 100%;
+		}
+	}
+	.checkboxes {
+		padding: 20px 0;
+		text-align: center;
+		font-size: 2.3rem;
+		.group {
+			padding: 0 12px;
+			&:nth-child(odd) {
+				background-color: $white;
+			}
+			&:nth-child(even) {
+				background-color: #f4f4f4;
+			}
+			p {
+				margin: 10px 0 0 0;
+			}
+			.no-br {
+				display: inline-block;
+				@include breakpoint(small) {
+					display: block;
+				}
+			}
+		}
+		input {
+			background-color: $darkgrey;
+			margin: 0 60px 0 20px;
+			display: inline-block;
+		}
+	}
+	#your-information-section {
+		border-top: 2px solid #dcdcdc;
+		width: 90%;
+		text-align: center;
+		font-size: 2.3rem;
+		margin: 0 auto;
+		.fields {
+			margin: 0 auto;
+			max-width: 450px;
+			width: 100%;
+			text-align: left;
+			label {
+				width: 180px;
+				display: inline-block;
+			}
+			input {
+				height: 28px;
+				font-size: 2rem;
+				background-color: $lightgrey;
+				border: 1px solid #989898;
+				width: 162px;
+				&[name="age"] {
+					width: 50px;
+				}
+				&#postalcode1 {
+					width: 50px;
+				}
+				&#postalcode2 {
+					width: 50px;
+				}
+				&#phone1 {
+					width: 50px;
+				}
+				&#phone2 {
+					width: 50px;
+				}
+				&#phone3 {
+					width: 50px;
+				}
+				&[type="checkbox"] {
+					width: auto;
+				}
+			}
+		}
+		#rules-section {
+			margin-top: 40px;
+			font-size: 1.6rem;
+			h3 {
+				font-size: 2.8rem;
+				text-align: center;
+			}
+			label {
+				width: auto;
+				margin-top: -14px;
+				vertical-align: middle;
+				a {
+					color: $black;
+					text-decoration: underline;
+				}
+			}
+		}
+		#optin-section {
+			margin-top: -14px;
+			font-size: 1.6rem;
+			margin-bottom: 40px;
+			#permission {
+				top: 6px;
+				position: relative;
+			}
+		}
+		.legal {
+			font-size: 1.6rem;
+			text-align: center;
+		}
+	}
+	#entry-button {
+		background-color: $black;
+		border: 2px solid $lightgrey;
+		font-size: 2.4rem;
+		text-transform: uppercase;
+		font-family: "futura", sans-serif;
+		color: $white;
+		display: block;
+		margin: 0 auto;
+		margin-top: 20px;
+		width: 260px;
+		text-align: center;
+		padding: 8px 24px 2px;
+	}
+	p {
+		color: $darkgrey;
+		a {
+			text-decoration: underline;
+			color: $darkgrey;
+		}
+	}
+}

@@ -1,0 +1,22 @@
+$lightgrey: #e0deda;
+$darkgrey: #505050;
+$black: #151515;
+$white: #fff;
+
+ @mixin breakpoint($point) {
+  @if $point == xxsmall {
+     @media (max-width: 400px)  { @content ; }
+  }
+  @if $point == xsmall {
+     @media (max-width: 640px)  { @content ; }
+  }
+  @if $point == special {
+     @media (max-width: 520px)  { @content ; }
+  }
+  @if $point == small {
+     @media (max-width: 768px)  { @content ; }
+  }
+  @if $point == medium {
+     @media (max-width: 991px)  { @content ; }
+  }
+}

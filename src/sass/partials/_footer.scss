@@ -1,0 +1,17 @@
+footer {
+	text-align: center;
+	padding-bottom: 50px;
+	.legal {
+		font-size: 0.8rem;
+		font-family: "Arial", sans-serif;
+		margin: 20px 0;
+	}
+	.logos {
+		img {
+			padding: 0 32px;
+			&:first-child {
+				border-right: 2px solid #adadad;
+			}
+		}
+	}
+}

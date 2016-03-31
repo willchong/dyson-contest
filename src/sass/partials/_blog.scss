@@ -1,0 +1,63 @@
+.headline {
+	width: 100%;
+	background: url('../img/headline-bg.jpg') repeat-y;
+	h2 {
+		font-size: 3rem;
+		color: $white;
+		margin: 0;
+		padding: 16px 0;
+		text-align: center;
+	}
+}
+
+.post {
+	max-width: 790px;
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	font-size: 0;
+	padding-top: 45px;
+	h1 {
+		font-size: 6rem;
+		@include breakpoint(small) {
+			text-align: center;
+		}
+	}
+	h2 {
+		font-size: 3rem;
+		@include breakpoint(small) {
+			text-align: center;
+			margin-bottom: 12px;
+		}
+	}
+	.social {
+		text-align: right;
+		@include breakpoint(small) {
+			text-align: center;
+		}
+		img {
+			width: auto;
+			margin-right: 14px;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+	.image {
+		margin-top: 26px;
+		img {
+			width: 100%;
+		}
+	}
+	.body {
+		p {
+			font-size: 2.2rem;
+			font-weight: 700;
+			line-height: 1.2;
+			margin: 34px 0 70px;
+			@include breakpoint(small) {
+				padding: 12px;
+			}
+		}
+	}
+}

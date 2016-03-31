@@ -1,0 +1,36 @@
+.headline {
+	width: 100%;
+	background: url('../img/headline-bg.jpg') repeat-y;
+	h2 {
+		font-size: 3rem;
+		color: $white;
+		margin: 0;
+		padding: 16px 0;
+		text-align: center;
+	}
+}
+
+.products-carousel {
+	position: relative;
+	margin: 0 10px 30px;
+	.prev {
+		cursor: pointer;
+		position: absolute;
+		left: 0;
+		width: 47px;
+		height: 94px;
+		top: 50%;
+		margin-top: -47px;
+		background: url('../img/arrow-left.png') no-repeat;
+	}
+	.next {
+		cursor: pointer;
+		position: absolute;
+		right: 0;
+		width: 47px;
+		height: 94px;
+		top: 50%;
+		margin-top: -47px;
+		background: url('../img/arrow-right.png') no-repeat;
+	}
+}
