@@ -30,8 +30,9 @@ header {
 			z-index: 101;
 			li {
 				display: inline-block;
-				&:first-child {
-					margin-right: 15px;
+				margin-right: 15px;
+				&:last-child {
+					margin-right: 0;
 				}
 			}
 		}
@@ -67,6 +68,19 @@ header {
 				a {
 					color: $darkgrey;
 				}
+				&:hover {
+					background-color: $black;
+					a {
+						color: $white;
+					}
+				}
+				&.underline {
+					background-color: $black;
+					a {
+						color: $white;
+					}
+				}
+				
 			}
 		}
 	}
